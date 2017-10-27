@@ -1,6 +1,6 @@
 {
-  "name": "gulp_default",
-  "description": "",
+  "name": "nn_site",
+  "description": "nashnet corporate site",
   "main": "index.js",
   "license": "ISC",
   "homepage": "",
@@ -12,5 +12,7 @@
     "tests"
   ],
   "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7"
   }
 }
