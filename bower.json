@@ -3,7 +3,7 @@
   "description": "nashnet corporate site",
   "main": "index.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "www.nashnet.ua",
   "ignore": [
     "**/.*",
     "node_modules",

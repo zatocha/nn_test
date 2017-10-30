@@ -1,0 +1,10 @@
+.container {
+  border: 1px solid red; }
+
+footer {
+  background: blue; }
+  footer header {
+    background: yellow; }
+
+body {
+  background: green; }
