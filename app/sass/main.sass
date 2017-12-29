@@ -1,14 +1,139 @@
-.container
-  border: 1px solid red
+@font-face
+  font-family: Calibri-light
+  src: url("../fonts/Calibri-Light.woff2") format("woff2"), url("../fonts/Calibri-Light.woff") format("woff")
+
+html, body
+  font-family: Calibri-light, sans-serif
+  background: #f5f5f5
+  height: 100%
+
+body > .container
+  margin: 0 auto
+  padding: 0
+  background: white
+  height: 100%
+
+a
+  -webkit-text-decoration-skip: ink
+  text-decoration-skip: ink
+
+.login
+  width: 100%
+  height: 50px
+  background: #ebebec
+  padding: 10px
+  -webkit-border-bottom-right-radius: 20px
+  -webkit-border-bottom-left-radius: 20px
+  -moz-border-radius-bottomright: 20px
+  -moz-border-radius-bottomleft: 20px
+  border-bottom-right-radius: 20px
+  border-bottom-left-radius: 20px
+  max-width: 760px
+
+.fb_lnk
+  content: ""
+  display: inline-block
+  width: 27px
+  height: 27px
+  background: url(../img/fb.png) no-repeat
+  transition: all 0.3s cubic-bezier(0.25, 0.1, 0.25, 1)
+
+.fb_lnk:hover
+  background: url(../img/fb_act.png) no-repeat
+
+.logo
+  padding: 15px 15px 5px
+
+.logo img
+  max-width: 382px
 
 footer
-  background: blue
+  background: #9c9c9c
 
-  header
-    background: yellow
-
-body
-  background: green
-
+.border-red
+  border: 1px solid red
+.border-green
+  border: 1px solid green
 
 
+
+/* Breakpoint XS */
+@media (max-width: 575px)
+
+  .hidden-xs-down, .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up,
+  .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
+    display: none !important
+
+  .xs-responsive, .sm-responsive, .md-responsive, .lg-responsive
+    width: 100%
+    height: auto
+
+  a.navbar-brand
+    width: 65%
+
+  .footer__btns
+    display: block
+    position: fixed
+    right: 10px
+    bottom: 10px
+    z-index: 99999
+
+  .footer__btn-android, .footer__btn-play
+    width: 65px!important
+    height: 65px!important
+  //border: 1px solid red
+
+  .footer__btn-android
+    right: 0
+    bottom: 75px!important
+
+  .btn_shine
+    width: 69px
+    height: 69px
+    right: -2px
+    bottom: -2px
+
+/* Breakpoint SM */
+@media (min-width: 576px) and (max-width: 767px)
+
+  .hidden-sm-down, .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up,
+  .hidden-unless-xs, .hidden-unless-md, .hidden-unless-lg, .hidden-unless-xl
+    display: none !important
+
+  .sm-responsive, .md-responsive, .lg-responsive
+    width: 100%
+    height: auto
+
+/* Breakpoint MD */
+@media (min-width: 768px) and (max-width: 991px)
+
+  .hidden-md-down, .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up,
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-lg, .hidden-unless-xl
+    display: none !important
+
+  .md-responsive, .lg-responsive
+    width: 100%
+    height: auto
+
+/* Breakpoint LG */
+@media (min-width: 992px) and (max-width: 1259px)
+
+  .hidden-lg-down, .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up,
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-xl
+    display: none !important
+
+  .lg-responsive
+    width: 100%
+    height: auto
+
+/* Breakpoint XL */
+@media (min-width: 1260px)
+
+  .hidden-xl-down,
+  .hidden-xs-up, .hidden-sm-up, .hidden-md-up, .hidden-lg-up, .hidden-xl-up,
+  .hidden-unless-xs, .hidden-unless-sm, .hidden-unless-md, .hidden-unless-lg
+    display: none !important

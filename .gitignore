@@ -1,4 +1,5 @@
 /node_modules
 /app/libs
+/build
 **/.DS_Store
 **/.idea

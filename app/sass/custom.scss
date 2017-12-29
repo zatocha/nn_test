@@ -1,0 +1,24 @@
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1260px
+) !default;
+$container-max-widths: (
+        sm: 576px,
+        md: 730px,
+        lg: 950px,
+        xl: 1260px
+) !default;
+
+
+$gray-500: #adb5bd;
+$orange: #f68220;
+$blue: #00aef0;
+$secondary: $gray-500;
+$warning: $orange;
+
+$grid-columns: 9;
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
